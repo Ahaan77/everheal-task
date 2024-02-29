@@ -20,7 +20,6 @@ function App() {
 
   return (
     <div className='scrollbar-hide' >
-
       {/* Topbar */}
       <div className="flex justify-between items-center font-['Montserrat'] ">
         <div className='font-bold text-black mx-20 my-10 text-4xl hover:scale-[1.1] hover:transition duration-200 hover:duration-200 cursor-pointer'>
