@@ -22,7 +22,7 @@ const Hero = ({ windowSize }) => {
                                 </div>
                             </div> :
                             <div className='w-full flex items-center justify-center gap-4'>
-                                <img onClick={() => setCarousel(!carousel)} className='mt-10' src="/assets/carousel-arrow.svg" alt="carousel" />
+                                <img onClick={() => setCarousel(!carousel)} className='mt-10 h-5 w-5' src="/assets/carousel-arrow.svg" alt="carousel" />
                                 {!carousel ?
                                     <div className='w-[60%] mt-10 h-28 rounded-[20px] bg-[#EEF8FF] flex items-center justify-center '>
                                         <div className='flex flex-col gap-0'>
@@ -56,12 +56,12 @@ const Hero = ({ windowSize }) => {
                                         </div>
                                     </div>
                                 }
-                                <img onClick={() => setCarousel(!carousel)} className='mt-10 rotate-[180deg]' src="/assets/carousel-arrow.svg" alt="carousel" />
+                                <img onClick={() => setCarousel(!carousel)} className='mt-10 rotate-[180deg] h-5 w-5' src="/assets/carousel-arrow.svg" alt="carousel" />
                             </div>
                         }
                     </div>
                     <div className='col-span-2 w-full md:-ml-10 relative'>
-                        <div className='h-[50vh] md:h-[68vh] rounded-full shadow-xl md:mt-[10vh] mt-4 mx-10 md:mx-0 scale-[1.06] hover:scale-[1.1] hover:transition duration-200 hover:duration-200'>
+                        <div className='h-[50vh] md:h-[68vh] rounded-full shadow-xl md:mt-[10vh] mt-4 mx-10 md:mx-0 md:scale-[1.06] md:hover:scale-[1.1] md:hover:transition duration-200 hover:duration-200'>
                             <img className="p-2 object-cover h-[50vh] md:h-[68vh]  w-full rounded-full" src="/assets/doctor-appointment.jpg" alt="doctors-image" />
 
                         </div>
