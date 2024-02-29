@@ -5,6 +5,7 @@ function App() {
 
   const navHover = "hover:text-gray-400 hover:transition duration-200 cursor-pointer"
   const [menuActive, setMenuActive] = useState(false)
+  const [carousel, setCarousel] = useState(false)
 
   function getWindowSize() {
     const { innerWidth, innerHeight } = window;
@@ -79,14 +80,49 @@ function App() {
                     <p className="font-bold text-sm text-center md:text-left font-['Montserrat']">Happy Patients</p>
                   </div>
                 </div> :
-                <div className='w-full flex justify-center'>
-                  <div className='w-[60%] mt-10 h-24 rounded-[20px] bg-[#EEF8FF] flex items-center justify-center '>
-                    <div className='flex flex-col gap-0'>
-                      <p className="font-bold text-2xl text-center md:text-left font-['Montserrat']">10k+</p>
-                      <p className="font-bold text-sm text-center md:text-left font-['Montserrat']">Happy Patients</p>
+                <div className='w-full flex items-center justify-center gap-2'>
+                  <img onClick={() => setCarousel(!carousel)} className='mt-10' src="/assets/carousel-arrow.svg" alt="carousel" />
+                  {!carousel ?
+                    <div className='w-[60%] mt-10 h-28 rounded-[20px] bg-[#EEF8FF] flex items-center justify-center '>
+                      <div className='flex flex-col gap-0'>
+                        <p className="font-bold text-2xl text-center md:text-left font-['Montserrat']">10k+</p>
+                        <p className="font-bold text-sm text-center md:text-left font-['Montserrat']">Happy Patients</p>
+                      </div>
+                    </div> :
+                    <div className='bg-[#FFF9ED] h-28 w-[60%] mt-10 rounded-xl'>
+                      <div className='mt-4 flex justify-center items-center'>
+                        <div className='flex items-center'>
+                          <div className='h-9 w-9 bg-white rounded-full flex justify-center items-center'>
+                            <img className='h-8 w-8 object-cover rounded-full' src="/assets/jane.jpg" />
+                          </div>
+                          <div className='h-9 w-9 -ml-2 bg-white rounded-full flex justify-center items-center'>
+                            <img className='h-8 w-8 object-cover rounded-full' src="/assets/doc-1.jpg" />
+                          </div>
+                          <div className='h-9 w-9 -ml-2 bg-white rounded-full flex justify-center items-center'>
+                            <img className='h-8 w-8 object-cover rounded-full' src="/assets/doc-2.jpg" />
+                          </div>
+                          <div className='h-9 w-9 -ml-2 bg-white rounded-full flex justify-center items-center'>
+                            <img className='h-8 w-8 object-cover rounded-full' src="/assets/doc-3.avif" />
+                          </div>
+                          <div className='h-9 w-9 -ml-2 bg-white rounded-full flex justify-center items-center'>
+                            <img className='h-8 w-8 object-cover rounded-full' src="/assets/doc-4.jpg" />
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div className='mt-1 ml-4'>
+                        <p className="font-bold text-xl font-['Montserrat']">150+</p>
+                        <p className="font-['Montserrat'] font-bold text-xs">Highly Specialised Doctors</p>
+
+                      </div>
+
                     </div>
-                  </div>
-                </div>}
+                  }
+
+                  <img onClick={() => setCarousel(!carousel)} className='mt-10' src="/assets/carousel-arrow-2.svg" alt="carousel" />
+                </div>
+              }
             </div>
             <div className='col-span-2 w-full md:-ml-10 relative'>
               <div className='h-[50vh] md:h-[68vh] rounded-full shadow-xl md:mt-[10vh] mt-4 mx-10 md:mx-0'>
