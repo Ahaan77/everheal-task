@@ -54,7 +54,23 @@ function App() {
                 <input className='w-full pl-10 focus:outline-none text-gray-700 text-sm font-semibold' placeholder='Search Symptoms/ Doctors/ Clinics' />
                 <button className='mr-5 bg-[#6F7BFB] text-white px-6 py-4 rounded-2xl font-bold hover:bg-opacity-80 hover:transition duration-200'>Search</button>
               </div>
-
+              <div className='h-32 w-40 bg-white shadow-xl rounded-2xl absolute top-[30vh] -right-[9.5vw]'>
+                <div className='w-full flex justify-center -mt-5'>
+                  <img className='h-12 w-12 object-cover rounded-full' src="/assets/doc-4.jpg" alt="doctor" />
+                </div>
+                <div className='w-full flex justify-center mt-3'>
+                  <p className='font-bold text-sm'>Dr. John reichman</p>
+                </div>
+                <div className='w-full flex justify-center mt-0'>
+                  <p className='font-bold text-sm text-gray-600'>Neurologist</p>
+                </div>
+                <div className='w-full flex justify-center mt-2'>
+                  <div className='z-90 px-6 py-[6px] bg-[#FFB714] rounded-lg text-white text-xs flex justify-center items-center hover:bg-opacity-80 hover:transition duration-200 cursor-pointer'>Appointment</div>
+                </div>
+              </div>
+              <div className='h-16 w-16 bg-black rounded-full shadow-xl absolute bottom-[18vh] -right-[1.5vw] shadow-xl flex justify-center items-center'>
+                <img src="/assets/arrow.svg" alt="arrow" />
+              </div>
             </div>
             <div className='col-span-1 w-full relative'>
               <div className='flex gap-3 items-center justify-end mt-[10vh]'>
@@ -67,6 +83,36 @@ function App() {
 
               </div>
               <p className='text-gray-600 text-sm mt-3 ml-0 w-[90%] absolute right-0 text-right'>The virtual experience was seemless, and the medical advice was thorough and precise.</p>
+
+              <div className='bg-[#FFF9ED] h-28 w-48 absolute bottom-[10vh] right-0 rounded-xl'>
+                <div className='mt-4 flex justify-center items-center'>
+                  <div className='flex items-center'>
+                    <div className='h-9 w-9 bg-white rounded-full flex justify-center items-center'>
+                      <img className='h-8 w-8 object-cover rounded-full' src="/assets/jane.jpg" />
+                    </div>
+                    <div className='h-9 w-9 -ml-2 bg-white rounded-full flex justify-center items-center'>
+                      <img className='h-8 w-8 object-cover rounded-full' src="/assets/doc-1.jpg" />
+                    </div>
+                    <div className='h-9 w-9 -ml-2 bg-white rounded-full flex justify-center items-center'>
+                      <img className='h-8 w-8 object-cover rounded-full' src="/assets/doc-2.jpg" />
+                    </div>
+                    <div className='h-9 w-9 -ml-2 bg-white rounded-full flex justify-center items-center'>
+                      <img className='h-8 w-8 object-cover rounded-full' src="/assets/doc-3.avif" />
+                    </div>
+                    <div className='h-9 w-9 -ml-2 bg-white rounded-full flex justify-center items-center'>
+                      <img className='h-8 w-8 object-cover rounded-full' src="/assets/doc-4.jpg" />
+                    </div>
+
+                  </div>
+
+                </div>
+                <div className='mt-1 ml-4'>
+                  <p className='font-bold text-xl'>150+</p>
+                  <p className='font-bold text-xs'>Highly Specialised Doctors</p>
+
+                </div>
+
+              </div>
 
             </div>
           </div>
